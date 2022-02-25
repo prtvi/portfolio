@@ -27,7 +27,7 @@ body {
   font-weight: var(--fw-300);
 }
 
-/* DESKTOP DESKTOP */
+/* DESKTOP /////////////////////// DESKTOP */
 
 main {
   margin-left: 20%;
@@ -36,16 +36,22 @@ main {
 
 /* global settings */
 
-.icon-image {
+.icon-image,
+.icon-image-top {
   border-radius: 8px;
-  transform: scale(0.8);
+  transform: scale(0.7);
   padding: 5pt;
   background-color: var(--img-bg-color);
+}
+
+.icon-image-top {
+  transform: scale(0.8);
 }
 
 .heading {
   color: var(--brightest);
   font-weight: var(--fw-400);
+  font-size: 1.4rem;
 }
 
 .section-margin-bottom {
@@ -101,6 +107,7 @@ main {
 
 .heading-intro {
   font-weight: var(--fw-500);
+  font-size: 1.6rem;
 }
 
 .subheading {
@@ -136,7 +143,7 @@ main {
 .profile-img {
   display: inline;
   float: right;
-  margin-right: 2%;
+  margin: 4% 2% 0% 0%;
   width: 20%;
   border-radius: 500px;
 }
@@ -152,7 +159,7 @@ main {
 
 .skill {
   color: var(--medium);
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 5px;
   margin: 3% 0% 3% 0%;
 }
@@ -182,6 +189,7 @@ main {
 
 .project {
   display: inline-block;
+  font-size: 0.9rem;
 
   width: 40%;
   margin: 0 2%;
@@ -228,11 +236,11 @@ main {
 
 /* ------------------------ */
 
-/* DESKTOP DESKTOP */
+/* DESKTOP /////////////////////// DESKTOP */
 
 /* ----------------------------------------------- */
 
-/* MOBILE MOBILE */
+/* MOBILE //////////////////////// MOBILE */
 
 @media screen and (max-width: 800px) {
   main {
@@ -241,7 +249,7 @@ main {
   }
 
   .section-margin-bottom {
-    margin-bottom: 10%;
+    margin-bottom: 14%;
   }
 
   /* section 1 navbar */
@@ -255,7 +263,7 @@ main {
   /* unhide icon in mobile mode */
   .hidden-icon {
     display: block;
-    margin: 4% 0% 6% 1%;
+    margin: 4% 0% 8% 1%;
   }
 
   /* section 2 intro */
@@ -266,10 +274,17 @@ main {
 
   .profile-img {
     width: 20%;
-    margin-right: 2%;
+    margin: 10% 2% 0% 0%;
   }
 
   /* section 3 skills */
+
+  .skill,
+  .subheading,
+  .description,
+  .other-skills {
+    font-size: 0.9rem;
+  }
 
   .skill {
     line-height: 125%;
@@ -282,6 +297,11 @@ main {
     margin: 1% auto 5% auto;
     width: 70%;
   }
+
+  .project-title,
+  .project-desc {
+    font-size: 0.9rem;
+  }
 }
 
-/* MOBILE MOBILE */
+/* MOBILE //////////////////////// MOBILE */
