@@ -33,7 +33,6 @@
       <!-- 
         SIDEBAR 
       -->
-
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
           <figure class="avatar-box">
@@ -142,12 +141,10 @@
       <!-- 
         MAIN CONTENT
        -->
-
       <div class="main-content">
         <!-- 
           NAVBAR
          -->
-
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
@@ -175,8 +172,7 @@
         <!-- 
           ABOUT
          -->
-
-        <article class="about active" data-page="about">
+        <article class="about" data-page="about">
           <header>
             <h2 class="h2 article-title">About me</h2>
           </header>
@@ -184,7 +180,6 @@
           <!-- 
             about
            -->
-
           <section class="about-text">
             <p>
               I'm Creative Director and UI/UX Designer from Sydney, Australia,
@@ -205,7 +200,6 @@
           <!-- 
             service
            -->
-
           <section class="service">
             <h3 class="h3 service-title">What I'm doing</h3>
 
@@ -290,13 +284,12 @@
           <!-- 
             testimonials
            -->
-
           <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
 
             <ul class="testimonials-list has-scrollbar">
               <li class="testimonials-item">
-                <a href="#" class="content-card" data-testimonials-item>
+                <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
                       src="./assets/images/avatar-1.png"
@@ -323,11 +316,11 @@
                       incididunt ut laborels dolore magnarels alia.
                     </p>
                   </div>
-                </a>
+                </div>
               </li>
 
               <li class="testimonials-item">
-                <a href="#" class="content-card" data-testimonials-item>
+                <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
                       src="./assets/images/avatar-2.png"
@@ -354,11 +347,11 @@
                       incididunt ut laborels dolore magnarels alia.
                     </p>
                   </div>
-                </a>
+                </div>
               </li>
 
               <li class="testimonials-item">
-                <a href="#" class="content-card" data-testimonials-item>
+                <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
                       src="./assets/images/avatar-3.png"
@@ -385,11 +378,11 @@
                       incididunt ut laborels dolore magnarels alia.
                     </p>
                   </div>
-                </a>
+                </div>
               </li>
 
               <li class="testimonials-item">
-                <a href="#" class="content-card" data-testimonials-item>
+                <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
                       src="./assets/images/avatar-4.png"
@@ -416,17 +409,404 @@
                       incididunt ut laborels dolore magnarels alia.
                     </p>
                   </div>
-                </a>
+                </div>
               </li>
             </ul>
           </section>
 
-          <!-- testimonials modal -->
+          <!-- 
+            testimonials modal
+           -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay>
+              <section class="testimonials-modal">
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
 
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="80"
+                      data-modal-img
+                    />
+                  </figure>
 
+                  <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+                </div>
 
+                <div class="modal-content">
+                  <h4 class="h4 modal-title" data-modal-title>Daniel lewis</h4>
 
-          
+                  <time datetime="2021-06-14">14 June, 2021</time>
+
+                  <div data-modal-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- 
+            clients
+           -->
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- 
+          RESUME
+         -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <!-- 
+            education
+           -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  KLS Public School, Belgaum
+                </h4>
+
+                <span>2012-2016</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Narayana PU College, Bangalore
+                </h4>
+
+                <span>2016-2018</span>
+
+                <p class="timeline-text">
+                  Ratione voluptatem sequi nesciunt, facere quisquams facere
+                  menda ossimus, omnis voluptas assumenda est omnis.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sri Jayachamarajendra College of Engineering, Mysuru
+                </h4>
+
+                <span>2018-2022</span>
+
+                <p class="timeline-text">
+                  Duis aute irure dolor in reprehenderit in voluptate, quila
+                  voluptas mag odit aut fugit, sed consequuntur magni dolores
+                  eos.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- 
+            experience
+           -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software developer intern @redBus India
+                </h4>
+
+                <span>March 2022 - May 2022</span>
+
+                <p class="timeline-text">
+                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+                  delenit atque corrupti, quos dolores et quas molestias
+                  exceptur.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <!-- 
+            skills
+           -->
+          <section class="skills">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web development</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">NodeJS</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Golang</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- 
+          PORTFOLIO
+         -->
+        <article class="portfolio active" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Web apps</button>
+              </li>
+
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Web development</button>
+              </li>
+
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Machine learning</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web apps</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Machine learning</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li class="project-item" data-filter-item data-category="web-dev">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="project-1"
+                      loading="lazy"
+                    />
+
+                    <h3 class="project-title">Project 1</h3>
+
+                    <p class="project-category">Web development</p>
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item" data-filter-item data-category="web-dev">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="project-2"
+                      loading="lazy"
+                    />
+
+                    <h3 class="project-title">Project 2</h3>
+
+                    <p class="project-category">Web development</p>
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item" data-filter-item data-category="ml">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="project-2"
+                      loading="lazy"
+                    />
+
+                    <h3 class="project-title">Project 3</h3>
+
+                    <p class="project-category">Machine learning</p>
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item" data-filter-item data-category="web-app">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="project-4"
+                      loading="lazy"
+                    />
+
+                    <h3 class="project-title">Project 4</h3>
+
+                    <p class="project-category">Web apps</p>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </section>
         </article>
       </div>
     </main>
