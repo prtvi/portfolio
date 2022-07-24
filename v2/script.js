@@ -12,10 +12,12 @@ const sidebarBtn = document.querySelector('[data-sidebar-btn]');
 
 sidebarBtn.addEventListener('click', () => elementToggleFunc(sidebar));
 
-// 
-// 
-// 
-// 
+//
+//
+//
+//
+//
+
 // all for modal action
 
 // testimonials variables
@@ -61,11 +63,48 @@ testimonialsItems.forEach(function (t) {
 modalCloseBtn.addEventListener('click', testimonialsModalFunc);
 overlay.addEventListener('click', testimonialsModalFunc);
 
+//
+//
+//
+//
+//
+//
+//
 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+// portfolio
+
+// custom select variables
+
+const select = document.querySelector('[data-select]');
+const selectItems = document.querySelectorAll('[data-select-item]');
+const selectValue = document.querySelector('[data-select-value]');
+
+// filter variables
+
+const filterItems = document.querySelectorAll('[data-filter-item]');
+
+const filterFunc = function (selectedValue) {
+  filterItems.forEach(fi => {
+    if (selectedValue === 'all') {
+      fi.classList.add('active');
+    } else if (selectedValue === fi.dataset.category) {
+      fi.classList.add('active');
+    } else {
+      fi.classList.remove('active');
+    }
+  });
+};
+
+// add event listeners
+select.addEventListener('click', function () {
+  elementToggleFunc(this);
+});
+
+selectItems.forEach(si => {
+  si.addEventListener('click', function () {
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    elementToggleFunc(select);
+    filterFunc(selectedValue);
+  });
+});
