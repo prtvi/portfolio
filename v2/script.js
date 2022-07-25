@@ -108,3 +108,68 @@ selectItems.forEach(si => {
     filterFunc(selectedValue);
   });
 });
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// Blog
+
+// contact form variables
+
+const form = document.querySelector('[data-form]');
+const formInputs = document.querySelectorAll('[data-form-input]');
+const submitBtn = document.querySelector('[data-form-btn]');
+
+// add event listeners for all input fields
+formInputs.forEach(fi => {
+  fi.addEventListener('input', function () {
+    // check form validation
+    if (form.checkValidity()) formBtn.removeAttribute('disabled');
+    else formBtn.setAttribute('disabled', '');
+  });
+});
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+// page navigation variables
+
+const navigationLinks = document.querySelectorAll('[data-nav-link]');
+const pages = document.querySelectorAll('[data-page]');
+
+// add event to all nav links
+
+navigationLinks.forEach(navLink => {
+  navLink.addEventListener('click', function () {
+    // remove active class from all links first
+    navigationLinks.forEach(nl => nl.classList.remove('active'));
+
+    pages.forEach(page => {
+      if (navLink.textContent.toLowerCase() === page.dataset.page) {
+        // if matched then add active class to nav link
+        navLink.classList.add('active');
+
+        // display page with active class
+        page.classList.add('active');
+
+        window.scrollTo(0, 0);
+      } else page.classList.remove('active');
+    });
+  });
+});
