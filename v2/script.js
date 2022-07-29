@@ -78,6 +78,7 @@ overlay.addEventListener('click', testimonialsModalFunc);
 const select = document.querySelector('[data-select]');
 const selectItems = document.querySelectorAll('[data-select-item]');
 const selectValue = document.querySelector('[data-select-value]');
+const filterBtn = document.querySelectorAll('[data-filter-btn]');
 
 // filter variables
 
@@ -85,13 +86,9 @@ const filterItems = document.querySelectorAll('[data-filter-item]');
 
 const filterFunc = function (selectedValue) {
   filterItems.forEach(fi => {
-    if (selectedValue === 'all') {
-      fi.classList.add('active');
-    } else if (selectedValue === fi.dataset.category) {
-      fi.classList.add('active');
-    } else {
-      fi.classList.remove('active');
-    }
+    if (selectedValue === 'all') fi.classList.add('active');
+    else if (selectedValue === fi.dataset.category) fi.classList.add('active');
+    else fi.classList.remove('active');
   });
 };
 
@@ -106,6 +103,22 @@ selectItems.forEach(si => {
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
     filterFunc(selectedValue);
+  });
+});
+
+// add event in all filter button items for large screen
+
+let lastClickedBtn = filterBtn[0];
+
+filterBtn.forEach(fb => {
+  fb.addEventListener('click', function () {
+    let selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    filterFunc(selectedValue);
+
+    lastClickedBtn.classList.remove('active');
+    this.classList.add('active');
+    lastClickedBtn = this;
   });
 });
 
