@@ -53,7 +53,7 @@
 
           <button class="info_more-btn" data-sidebar-btn>
             <span>Show contacts</span>
-            <ion-icon name="chevron-down"> </ion-icon>
+            <ion-icon name="chevron-down"></ion-icon>
           </button>
         </div>
 
@@ -118,19 +118,31 @@
 
           <ul class="social-list">
             <li class="social-item">
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
+              <a
+                href="https://www.linkedin.com/in/prithviraj-vernekar-5830161b2/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="#" class="social-link">
+              <a
+                href="https://twitter.com/prtviv"
+                class="social-link"
+                target="_blank"
+              >
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="#" class="social-link">
+              <a
+                href="https://www.instagram.com/prtviv/"
+                class="social-link"
+                target="_blank"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
@@ -148,24 +160,28 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+              <button class="navbar-link active" data-nav-link="about">
+                About
+              </button>
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
+              <button class="navbar-link" data-nav-link="resume">Resume</button>
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
+              <button class="navbar-link" data-nav-link="portfolio">
+                Portfolio
+              </button>
+            </li>
+
+            <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link="blog">Blog</button>
             </li>
 
             <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li>
+              <button class="navbar-link" data-nav-link="contact">Contact</button>
+            </li> -->
           </ul>
         </nav>
 
@@ -211,25 +227,6 @@
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
-                    src="./assets/images/icon-design.svg"
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web design</h4>
-
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
                     src="./assets/images/icon-dev.svg"
                     alt="web development icon"
                     width="40"
@@ -240,7 +237,8 @@
                   <h4 class="h4 service-item-title">Web development</h4>
 
                   <p class="service-item-text">
-                    High-quality development of sites at the professional level.
+                    I like to build full stack applications, with backend
+                    technologies like Golang & NodeJS.
                   </p>
                 </div>
               </li>
@@ -248,37 +246,18 @@
               <li class="service-item">
                 <div class="service-icon-box">
                   <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
+                    src="./assets/images/icon-ml.svg"
+                    alt="gear icon"
                     width="40"
                   />
                 </div>
 
                 <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <h4 class="h4 service-item-title">Automation projects</h4>
 
                   <p class="service-item-text">
-                    Professional development of applications for iOS and
-                    Android.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Photography</h4>
-
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional
-                    level.
+                    I like working on automation based projects involving
+                    Machine Learning and IoT.
                   </p>
                 </div>
               </li>
@@ -288,7 +267,7 @@
           <!-- 
             testimonials
            -->
-          <section class="testimonials">
+          <!-- <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
 
             <ul class="testimonials-list has-scrollbar">
@@ -416,12 +395,12 @@
                 </div>
               </li>
             </ul>
-          </section>
+          </section> -->
 
           <!-- 
             testimonials modal
            -->
-          <div class="modal-container" data-modal-container>
+          <!-- <div class="modal-container" data-modal-container>
             <div class="overlay" data-overlay></div>
             <section class="testimonials-modal">
               <button class="modal-close-btn" data-modal-close-btn>
@@ -458,12 +437,12 @@
                 </div>
               </div>
             </section>
-          </div>
+          </div> -->
 
           <!-- 
             clients
            -->
-          <section class="clients">
+          <!-- <section class="clients">
             <h3 class="h3 clients-title">Clients</h3>
 
             <ul class="clients-list has-scrollbar">
@@ -521,7 +500,7 @@
                 </a>
               </li>
             </ul>
-          </section>
+          </section> -->
         </article>
 
         <!-- 
@@ -547,10 +526,10 @@
             <ol class="timeline-list">
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  KLS Public School, Belgaum
+                  10th Grade from KLS Public School, Belgaum
                 </h4>
 
-                <span>2012-2016</span>
+                <span>2016</span>
 
                 <p class="timeline-text">
                   Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
@@ -561,28 +540,27 @@
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Narayana PU College, Bangalore
+                  12th Pre-university from Narayana PU College, Bangalore
                 </h4>
 
-                <span>2016-2018</span>
+                <span>2018</span>
 
                 <p class="timeline-text">
-                  Ratione voluptatem sequi nesciunt, facere quisquams facere
-                  menda ossimus, omnis voluptas assumenda est omnis.
+                  Pursued Computer Science from Narayana PU College, Bangalore
                 </p>
               </li>
 
               <li class="timeline-item">
                 <h4 class="h4 timeline-item-title">
-                  Sri Jayachamarajendra College of Engineering, Mysuru
+                  BE from Sri Jayachamarajendra College of Engineering, Mysuru
                 </h4>
 
-                <span>2018-2022</span>
+                <span>2022</span>
 
                 <p class="timeline-text">
-                  Duis aute irure dolor in reprehenderit in voluptate, quila
-                  voluptas mag odit aut fugit, sed consequuntur magni dolores
-                  eos.
+                  Completed my Bachelor of Engineering in Electronics and
+                  Communication from Sri Jayachamarajendra College of
+                  Engineering, Mysuru
                 </p>
               </li>
             </ol>
@@ -606,7 +584,7 @@
                   Software developer intern @redBus India
                 </h4>
 
-                <span>March 2022 - May 2022</span>
+                <span>March - May, 2022</span>
 
                 <p class="timeline-text">
                   Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
@@ -680,22 +658,34 @@
           </header>
 
           <section class="projects">
-            <!-- filter list -->
+            <!-- filter list for larger screen (like navbar) -->
             <ul class="filter-list">
               <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+                <button class="active" data-filter-btn="all">All</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web apps</button>
+                <button data-filter-btn="automation">Automation</button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Web development</button>
+                <button data-filter-btn="web development">
+                  Web development
+                </button>
               </li>
 
               <li class="filter-item">
-                <button data-filter-btn>Machine learning</button>
+                <button data-filter-btn="machine learning">
+                  Machine learning
+                </button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn="iot">IoT</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn="other">Other</button>
               </li>
             </ul>
 
@@ -713,115 +703,197 @@
 
               <ul class="select-list">
                 <li class="select-item">
-                  <button data-select-item>All</button>
+                  <button data-select-item="all">All</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Web apps</button>
+                  <button data-select-item="automation">Automation</button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Web development</button>
+                  <button data-select-item="web development">
+                    Web development
+                  </button>
                 </li>
 
                 <li class="select-item">
-                  <button data-select-item>Machine learning</button>
+                  <button data-select-item="machine learning">
+                    Machine learning
+                  </button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item="iot">IoT</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item="other">Other</button>
                 </li>
               </ul>
             </div>
 
             <!-- display project list -->
             <ul class="project-list">
+              <!-- 1. automation-using-hand-gestures -->
               <li
                 class="project-item active"
-                data-filter-item
-                data-category="web development"
+                data-project-item
+                data-category="['automation', 'machine learning']"
               >
-                <a href="#">
+                <a
+                  href="https://github.com/prtvi/automation-using-hand-gestures"
+                  target="_blank"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="./assets/images/project-1.jpg"
-                      alt="project-1"
+                      src="./assets/images/automation-using-hand-gestures.png"
+                      alt="automation using hand gestures"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">Project 1</h3>
+                  <h3 class="project-title">Automation using hand gestures</h3>
 
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="project-2"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Project 2</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="machine learning"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="project-2"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Project 3</h3>
-
+                  <p class="project-category">Automation</p>
                   <p class="project-category">Machine learning</p>
                 </a>
               </li>
 
+              <!-- 2. smart agricare -->
               <li
                 class="project-item active"
-                data-filter-item
-                data-category="web apps"
+                data-project-item
+                data-category="['iot', 'web development', 'machine learning']"
               >
-                <a href="#">
+                <a
+                  href="https://github.com/gokulBalaG/FYP-CodeBase"
+                  target="_blank"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
                     <img
-                      src="./assets/images/project-4.png"
-                      alt="project-4"
+                      src="./assets/images/smart-agricare.png"
+                      alt="smart agricare"
                       loading="lazy"
                     />
                   </figure>
-                  <h3 class="project-title">Project 4</h3>
+                  <h3 class="project-title">Smart agricare</h3>
 
-                  <p class="project-category">Web apps</p>
+                  <p class="project-category">Web development</p>
+                  <p class="project-category">IoT</p>
+                  <p class="project-category">Machine learning</p>
+                </a>
+              </li>
+
+              <!-- 3. joke API -->
+              <li
+                class="project-item active"
+                data-project-item
+                data-category="['web development']"
+              >
+                <a href="https://github.com/prtvi/joke-api" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/joke-api.png"
+                      alt="joke API"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Joke API</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <!-- 4. sorting visualizer -->
+              <li
+                class="project-item active"
+                data-project-item
+                data-category="['web development']"
+              >
+                <a
+                  href="https://github.com/prtvi/sorting-visualizer"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/sorting-visualizer.png"
+                      alt="sorting visualizer"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Sorting visualizer</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <!-- 5. steganography -->
+              <li
+                class="project-item active"
+                data-project-item
+                data-category="['other']"
+              >
+                <a
+                  href="https://github.com/prtvi/steganography"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/steganography.png"
+                      alt="steganography"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Steganography</h3>
+
+                  <p class="project-category">Other</p>
+                </a>
+              </li>
+
+              <!-- 6. green screening implementation -->
+              <li
+                class="project-item active"
+                data-project-item
+                data-category="['other']"
+              >
+                <a
+                  href="https://github.com/prtvi/green-screening-implementation"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/green-screening-implementation.png"
+                      alt="green screening implementation"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Green screening implementation</h3>
+
+                  <p class="project-category">Other</p>
                 </a>
               </li>
             </ul>
@@ -831,7 +903,7 @@
         <!-- 
           BLOG
          -->
-        <article class="blog" data-page="blog">
+        <!-- <article class="blog" data-page="blog">
           <header>
             <h2 class="h2 article-title">Blog</h2>
           </header>
@@ -926,24 +998,24 @@
               </li>
             </ul>
           </section>
-        </article>
+        </article> -->
 
         <!-- 
           CONTACT
          -->
-        <article class="contact" data-page="contact">
+        <!-- <article class="contact" data-page="contact">
           <header>
             <h2 class="h2 article-title">Contact</h2>
           </header>
 
           <section class="mapbox" data-mapbox>
             <figure>
-              <!-- <iframe
+              <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1819470044525!2d77.64642491430425!3d12.96020641863605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14013966ef53%3A0x6e668abe30464363!2sredBus%20India!5e0!3m2!1sen!2sin!4v1658692030763!5m2!1sen!2sin"
                 width="400"
                 height="300"
                 loading="lazy"
-              ></iframe> -->
+              ></iframe>
             </figure>
           </section>
 
@@ -985,7 +1057,7 @@
               </button>
             </form>
           </section>
-        </article>
+        </article> -->
       </div>
     </main>
 
