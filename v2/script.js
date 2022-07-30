@@ -1,79 +1,23 @@
 'use strict';
 
+// project tags
+// auto, webdev, ml, iot, other
+
+// ---------------------- SIDEBAR ----------------------
+
 // element toggle function
 const elementToggleFunc = ele => ele.classList.toggle('active');
-
-// sidebar variables
 
 const sidebar = document.querySelector('[data-sidebar]');
 const sidebarBtn = document.querySelector('[data-sidebar-btn]');
 
 // sidebar toggle functionality for mobile
-
 sidebarBtn.addEventListener('click', () => elementToggleFunc(sidebar));
 
 //
 //
-//
-//
-//
 
-// all for modal action
-
-// // testimonials variables
-
-// const testimonialsItems = document.querySelectorAll('[data-testimonials-item]');
-// const modalContainer = document.querySelector('[data-modal-container]');
-// const modalCloseBtn = document.querySelector('[data-modal-close-btn]');
-// const overlay = document.querySelector('[data-overlay]');
-
-// // modal variables
-
-// const modalImg = document.querySelector('[data-modal-img]');
-// const modalTitle = document.querySelector('[data-modal-title]');
-// const modalText = document.querySelector('[data-modal-text]');
-
-// // modal toggle function
-
-// const testimonialsModalFunc = function () {
-//   overlay.classList.toggle('active');
-//   modalContainer.classList.toggle('active');
-// };
-
-// // add click events to all modal items
-
-// testimonialsItems.forEach(function (t) {
-//   t.addEventListener('click', function () {
-//     modalImg.src = this.querySelector('[data-testimonials-avatar]').src;
-//     modalImg.alt = this.querySelector('[data-testimonials-avatar]').alt;
-
-//     modalTitle.innerHTML = this.querySelector(
-//       '[data-testimonials-title]'
-//     ).innerHTML;
-//     modalText.innerHTML = this.querySelector(
-//       '[data-testimonials-text]'
-//     ).innerHTML;
-
-//     testimonialsModalFunc();
-//   });
-// });
-
-// // add click event to close modal
-
-// modalCloseBtn.addEventListener('click', testimonialsModalFunc);
-// overlay.addEventListener('click', testimonialsModalFunc);
-
-//
-//
-//
-//
-//
-//
-//
-
-// portfolio
-
-// custom select variables
+// ---------------------- PORTFOLIO ----------------------
 
 // for dropdown selection
 
@@ -86,22 +30,20 @@ const selectValue = document.querySelector('[data-select-value]');
 // all possible selectable values for selectBtn
 const selectItems = document.querySelectorAll('[data-select-item]');
 
-// filter variables
-
 // project items
 const projectItems = document.querySelectorAll('[data-project-item]');
 
 const filterFunc = function (selectedValue) {
-  projectItems.forEach(fi => {
+  projectItems.forEach(pi => {
     // project tags or categories
-    const tags = fi.dataset.category;
+    const tags = pi.dataset.category;
 
     // if selectedValue is all then show all projects
-    if (selectedValue === 'all') fi.classList.add('active');
+    if (selectedValue === 'all') pi.classList.add('active');
     // else if selectedValue exists in project tags then show that project
-    else if (tags.includes(selectedValue)) fi.classList.add('active');
+    else if (tags.includes(selectedValue)) pi.classList.add('active');
     // else hide that project
-    else fi.classList.remove('active');
+    else pi.classList.remove('active');
   });
 };
 
@@ -140,44 +82,8 @@ filterBtns.forEach(fb => {
 
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
-// // Contact
-
-// // contact form variables
-
-// const form = document.querySelector('[data-form]');
-// const formInputs = document.querySelectorAll('[data-form-input]');
-// const submitBtn = document.querySelector('[data-form-btn]');
-
-// // add event listeners for all input fields
-// formInputs.forEach(fi => {
-//   fi.addEventListener('input', function () {
-//     // check form validation
-//     if (form.checkValidity()) formBtn.removeAttribute('disabled');
-//     else formBtn.setAttribute('disabled', '');
-//   });
-// });
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-// page navigation variables
+// ---------------------- PAGE NAVIGATION ----------------------
 
 const navigationLinks = document.querySelectorAll('[data-nav-link]');
 const pages = document.querySelectorAll('[data-page]');
@@ -202,3 +108,79 @@ navigationLinks.forEach(navLink => {
     });
   });
 });
+
+//
+//
+//
+//
+//
+
+/*
+// modal
+
+// all for modal action
+
+// testimonials variables
+
+const testimonialsItems = document.querySelectorAll('[data-testimonials-item]');
+const modalContainer = document.querySelector('[data-modal-container]');
+const modalCloseBtn = document.querySelector('[data-modal-close-btn]');
+const overlay = document.querySelector('[data-overlay]');
+
+// modal variables
+
+const modalImg = document.querySelector('[data-modal-img]');
+const modalTitle = document.querySelector('[data-modal-title]');
+const modalText = document.querySelector('[data-modal-text]');
+
+// modal toggle function
+
+const testimonialsModalFunc = function () {
+  overlay.classList.toggle('active');
+  modalContainer.classList.toggle('active');
+};
+
+// add click events to all modal items
+
+testimonialsItems.forEach(function (t) {
+  t.addEventListener('click', function () {
+    modalImg.src = this.querySelector('[data-testimonials-avatar]').src;
+    modalImg.alt = this.querySelector('[data-testimonials-avatar]').alt;
+
+    modalTitle.innerHTML = this.querySelector(
+      '[data-testimonials-title]'
+    ).innerHTML;
+    modalText.innerHTML = this.querySelector(
+      '[data-testimonials-text]'
+    ).innerHTML;
+
+    testimonialsModalFunc();
+  });
+});
+
+// add click event to close modal
+
+modalCloseBtn.addEventListener('click', testimonialsModalFunc);
+overlay.addEventListener('click', testimonialsModalFunc);
+
+*/
+
+/*
+// Contact
+
+// // contact form variables
+
+// const form = document.querySelector('[data-form]');
+// const formInputs = document.querySelectorAll('[data-form-input]');
+// const submitBtn = document.querySelector('[data-form-btn]');
+
+// // add event listeners for all input fields
+// formInputs.forEach(fi => {
+//   fi.addEventListener('input', function () {
+//     // check form validation
+//     if (form.checkValidity()) formBtn.removeAttribute('disabled');
+//     else formBtn.setAttribute('disabled', '');
+//   });
+// });
+
+*/

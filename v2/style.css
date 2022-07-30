@@ -1096,7 +1096,7 @@ main {
 
   /* for making project tags or categories */
   display: inline-block;
-  background: var(--jet);
+  background: var(--onyx);
   width: fit-content;
   padding: 4px 8px 4px 8px;
   border-radius: 15px;
