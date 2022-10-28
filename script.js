@@ -18,5 +18,12 @@ const updateAge = function () {
 	);
 };
 
+const closeNavOnClick = function () {
+	if (this.classList.contains('toggle')) toggleNavbar();
+};
+
 hamburger.addEventListener('click', toggleNavbar);
+navLinks.forEach(n => n.addEventListener('click', closeNavOnClick)); // close navbar when any link is clicked
+
+// update age dynamically
 window.addEventListener('load', updateAge);
