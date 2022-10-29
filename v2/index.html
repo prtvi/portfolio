@@ -9,7 +9,7 @@
 		<!-- favicon -->
 		<link
 			rel="shortcut icon"
-			href="./images/icons/avatar.png"
+			href="https://avatars.githubusercontent.com/u/67362607?v=4"
 			type="image/x-icon"
 		/>
 
@@ -25,14 +25,10 @@
 		/>
 	</head>
 	<body>
-		<!-- 
-      MAIN 
-    -->
-
 		<main>
 			<!-- 
-        SIDEBAR 
-      -->
+    			SIDEBAR 
+    		-->
 			<aside class="sidebar" data-sidebar>
 				<div class="sidebar-info">
 					<figure class="avatar-box">
@@ -75,7 +71,7 @@
 							</div>
 						</li>
 
-						<li class="contact-item">
+						<!-- <li class="contact-item">
 							<div class="icon-box">
 								<ion-icon name="phone-portrait-outline"></ion-icon>
 							</div>
@@ -87,7 +83,7 @@
 									>+91 1234567890</a
 								>
 							</div>
-						</li>
+						</li> -->
 
 						<li class="contact-item">
 							<div class="icon-box">
@@ -117,6 +113,16 @@
 					<div class="separator"></div>
 
 					<ul class="social-list">
+						<li class="social-item">
+							<a
+								href="https://github.com/prtvi"
+								class="social-link"
+								target="_blank"
+							>
+								<ion-icon name="logo-github"></ion-icon>
+							</a>
+						</li>
+
 						<li class="social-item">
 							<a
 								href="https://www.linkedin.com/in/prithviraj-vernekar-5830161b2/"
@@ -151,12 +157,12 @@
 			</aside>
 
 			<!-- 
-        MAIN CONTENT
-       -->
+        		MAIN CONTENT
+     		-->
 			<div class="main-content">
 				<!-- 
-          NAVBAR
-         -->
+          			NAVBAR
+         		-->
 				<nav class="navbar">
 					<ul class="navbar-list">
 						<li class="navbar-item">
@@ -186,12 +192,8 @@
 				</nav>
 
 				<!-- 
-          PAGES
-         -->
-
-				<!-- 
-          ABOUT
-         -->
+          			ABOUT
+        		-->
 				<article class="about active" data-page="about">
 					<header>
 						<h2 class="h2 article-title">About me</h2>
@@ -246,7 +248,7 @@
 							<li class="service-item">
 								<div class="service-icon-box">
 									<img
-										src="./images/icons/icon-ml.svg"
+										src="./images/icons/icon-auto.svg"
 										alt="gear icon"
 										width="40"
 									/>
@@ -504,8 +506,8 @@
 				</article>
 
 				<!-- 
-          RESUME
-         -->
+          			RESUME
+         		-->
 				<article class="resume" data-page="resume">
 					<header>
 						<h2 class="h2 article-title">Resume</h2>
@@ -592,6 +594,20 @@
 									exceptur.
 								</p>
 							</li>
+
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									Software developer @redBus India
+								</h4>
+
+								<span>August 2022 - Present</span>
+
+								<p class="timeline-text">
+									Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
+									delenit atque corrupti, quos dolores et quas molestias
+									exceptur.
+								</p>
+							</li>
 						</ol>
 					</section>
 
@@ -650,8 +666,8 @@
 				</article>
 
 				<!-- 
-          PORTFOLIO
-         -->
+          			PORTFOLIO
+         		-->
 				<article class="portfolio" data-page="portfolio">
 					<header>
 						<h2 class="h2 article-title">Portfolio</h2>
@@ -726,7 +742,60 @@
 
 						<!-- display project list -->
 						<ul class="project-list">
-							<!-- 1. automation using hand gestures -->
+							<!-- A* algorithm vis -->
+							<li
+								class="project-item active"
+								data-project-item
+								data-category="['webdev']"
+							>
+								<a href="https://github.com/prtvi/astar-vis" target="_blank">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img
+											src="https://github.com/prtvi/astar-vis/raw/master/out/3.png"
+											alt="a star visualizer"
+											loading="lazy"
+										/>
+									</figure>
+
+									<h3 class="project-title">A* shortest path Visualization</h3>
+
+									<p class="project-category">Web development</p>
+								</a>
+							</li>
+
+							<!-- react-rat in a maze -->
+							<li
+								class="project-item active"
+								data-project-item
+								data-category="['webdev']"
+							>
+								<a
+									href="https://github.com/prtvi/rat-in-a-maze"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+
+										<img
+											src="https://github.com/prtvi/rat-in-a-maze/raw/master/out/3.png"
+											alt="rat-in-a-maze"
+											loading="lazy"
+										/>
+									</figure>
+
+									<h3 class="project-title">Rat in a Maze Visualization</h3>
+
+									<p class="project-category">Web development</p>
+								</a>
+							</li>
+
+							<!-- automation using hand gestures -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -756,11 +825,11 @@
 								</a>
 							</li>
 
-							<!-- 2. smart agricare -->
+							<!-- smart agricare -->
 							<li
 								class="project-item active"
 								data-project-item
-								data-category="['iot', 'ml', 'webdev']"
+								data-category="['iot', 'ml', 'webdev', 'auto']"
 							>
 								<a
 									href="https://github.com/gokulBalaG/FYP-CodeBase"
@@ -783,10 +852,11 @@
 									<p class="project-category">IoT</p>
 									<p class="project-category">Machine learning</p>
 									<p class="project-category">Web development</p>
+									<p class="project-category">Automation</p>
 								</a>
 							</li>
 
-							<!-- 3. joke api -->
+							<!-- joke api -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -811,7 +881,7 @@
 								</a>
 							</li>
 
-							<!-- 4. sorting visualizer -->
+							<!-- sorting visualizer -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -839,7 +909,7 @@
 								</a>
 							</li>
 
-							<!-- 5. steganography -->
+							<!-- steganography -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -867,7 +937,7 @@
 								</a>
 							</li>
 
-							<!-- 6. green screening implementation -->
+							<!-- green screening implementation -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -883,7 +953,7 @@
 										</div>
 
 										<img
-											src="./images/projects/green-screening-implementation.png"
+											src="https://github.com/prtvi/green-screening-implementation/raw/master/images/output.png"
 											alt="green screening implementation"
 											loading="lazy"
 										/>
@@ -895,7 +965,7 @@
 								</a>
 							</li>
 
-							<!-- 7. password manager -->
+							<!-- password manager -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -911,7 +981,7 @@
 										</div>
 
 										<img
-											src="./images/projects/password-manager.png"
+											src="https://github.com/prtvi/passwordManager/raw/master/snapshot.png"
 											alt="password manager"
 											loading="lazy"
 										/>
@@ -923,7 +993,7 @@
 								</a>
 							</li>
 
-							<!-- 8. mso -->
+							<!-- mso -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -936,7 +1006,7 @@
 										</div>
 
 										<img
-											src="./images/projects/mso.png"
+											src="https://github.com/prtvi/mso/raw/master/output.png"
 											alt="mapping system for organizations"
 											loading="lazy"
 										/>
@@ -950,7 +1020,7 @@
 								</a>
 							</li>
 
-							<!-- 9. typing test -->
+							<!-- typing test -->
 							<li
 								class="project-item active"
 								data-project-item
@@ -982,8 +1052,8 @@
 				</article>
 
 				<!-- 
-          BLOG
-         -->
+          			BLOG
+         		-->
 				<!-- <article class="blog" data-page="blog">
           <header>
             <h2 class="h2 article-title">Blog</h2>
@@ -1082,8 +1152,8 @@
         </article> -->
 
 				<!-- 
-          CONTACT
-         -->
+          			CONTACT
+         		-->
 				<!-- <article class="contact" data-page="contact">
           <header>
             <h2 class="h2 article-title">Contact</h2>
