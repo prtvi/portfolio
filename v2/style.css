@@ -24,7 +24,7 @@
 		hsla(30, 25%, 2%, 0) 50%
 	);
 
-	--bg-gradient-green-dark-2: linear-gradient(
+	--bg-gradient-lightgreen-dark-2: linear-gradient(
 			135deg,
 			hsla(124, 100%, 71%, 0.251) 0%,
 			hsla(35, 100%, 68%, 0) 59.86%
@@ -37,13 +37,16 @@
 		hsla(0, 0%, 25%, 0) 50%
 	);
 
-	--text-gradient-yellow: linear-gradient(
+	--text-gradient-green: linear-gradient(
 		to right,
-		hsl(113, 94%, 60%),
-		hsl(123, 96%, 51%)
+		hsl(95, 100%, 80%),
+		hsl(127, 60%, 52%)
 	);
 
 	/* solids */
+
+	--accent-green-l: #c3ff99;
+	--accent-green-d: #3ccf4e;
 
 	--jet: hsl(0, 0%, 22%);
 	--onyx: hsl(240, 1%, 17%);
@@ -55,9 +58,6 @@
 	--light-gray: hsl(0, 0%, 84%);
 	--light-gray-70: hsla(0, 0%, 84%, 0.7);
 	--bittersweet-shimmer: hsl(0, 43%, 51%);
-
-	--accent-green-l: #02e402;
-	--accent-green-d: #01ad01;
 
 	/* 
     typography
@@ -196,7 +196,7 @@ article {
 	justify-content: center;
 	align-items: center;
 	font-size: 16px;
-	color: var(--accent-green-l);
+	color: var(--accent-green-d);
 	box-shadow: var(--shadow-1);
 	z-index: 1;
 }
@@ -269,7 +269,7 @@ article.active {
 	left: 0;
 	width: 30px;
 	height: 3px;
-	background: var(--text-gradient-yellow);
+	background: var(--text-gradient-green);
 	border-radius: 3px;
 }
 
@@ -399,7 +399,7 @@ main {
 
 .info_more-btn:hover::before,
 .info_more-btn:focus::before {
-	background: var(--bg-gradient-green-dark-2);
+	background: var(--bg-gradient-lightgreen-dark-2);
 }
 
 .info_more-btn span {
@@ -571,6 +571,14 @@ main {
 
 .service-icon-box img {
 	margin: auto;
+}
+
+.svg-filter {
+	/* to change svg color */
+	/* https://codepen.io/sosuke/pen/Pjoqqp */
+
+	filter: invert(67%) sepia(81%) saturate(444%) hue-rotate(70deg)
+		brightness(88%) contrast(90%);
 }
 
 .service-content-box {
@@ -871,7 +879,7 @@ main {
 	left: -33px;
 	height: 6px;
 	width: 6px;
-	background: var(--text-gradient-yellow);
+	background: var(--text-gradient-green);
 	border-radius: 50%;
 	box-shadow: 0 0 0 4px var(--jet);
 }
@@ -919,7 +927,7 @@ main {
 }
 
 .skill-progress-fill {
-	background: var(--text-gradient-yellow);
+	background: var(--text-gradient-green);
 	height: 100%;
 	border-radius: inherit;
 }
@@ -1096,7 +1104,7 @@ main {
 }
 
 .project-category {
-	color: var(--light-gray-70);
+	color: var(--accent-green-l);
 	font-size: var(--fs-6);
 	font-weight: var(--fw-300);
 
@@ -1105,7 +1113,6 @@ main {
 	background: var(--onyx);
 	width: fit-content;
 	padding: 4px 8px 4px 8px;
-	color: var(--accent-green-l);
 	border-radius: 15px;
 	margin-top: 5px;
 }
@@ -1312,7 +1319,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn:hover::before {
-  background: var(--bg-gradient-green-dark-2);
+  background: var(--bg-gradient-lightgreen-dark-2);
 }
 
 .form-btn:disabled {

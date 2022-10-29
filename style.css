@@ -30,6 +30,7 @@
 	--fw-300: 300;
 	--fw-400: 400;
 	--fw-500: 500;
+	--fw-600: 600;
 
 	/* font family */
 	--ff-poppins: 'Poppins', sans-serif;
@@ -98,8 +99,8 @@ a {
 } */
 
 .nav-link:first-child {
-	font-size: var(--fs-2);
-	font-weight: var(--fw-500);
+	font-size: var(--fs-3);
+	font-weight: var(--fw-400);
 }
 
 .nav-link:not(:first-child) {
@@ -239,7 +240,7 @@ section {
 .intro h1 {
 	color: var(--brightest);
 	font-size: var(--fs-1);
-	font-weight: var(--fw-500);
+	font-weight: var(--fw-600);
 	margin-bottom: 15px;
 }
 
@@ -284,6 +285,7 @@ section {
 
 .skills h3 {
 	color: var(--brightest);
+	font-weight: var(--fw-500);
 	font-size: var(--fs-2);
 	margin-bottom: 25px;
 }
@@ -307,6 +309,7 @@ section {
 
 .skill strong {
 	color: var(--brightest);
+	font-weight: var(--fw-500);
 }
 
 .other-skills {
@@ -330,6 +333,7 @@ section {
 .projects h3 {
 	color: var(--brightest);
 	font-size: var(--fs-2);
+	font-weight: var(--fw-500);
 	text-align: left;
 	margin-bottom: 25px;
 }
@@ -385,6 +389,7 @@ section {
 	color: var(--brightest);
 	text-align: left;
 	font-size: var(--fs-2);
+	font-weight: var(--fw-500);
 	margin-bottom: 15px;
 }
 
@@ -543,6 +548,10 @@ section {
 
 	.description {
 		font-size: var(--fs-4);
+	}
+
+	.skill p {
+		margin-bottom: 20px;
 	}
 
 	.project-list {
