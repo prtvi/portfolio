@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { socialLinks } from '../data';
+import './Contacts.css';
+import { socialLinks } from '../../data';
 
 export default function Contacts() {
 	return (

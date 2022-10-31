@@ -1,0 +1,110 @@
+:root {
+	/* --border-toggle: 1px solid gray; */
+
+	/* global colors */
+	--bg: #18181b;
+	--img-bg-color: #27272a;
+
+	/* text colors */
+	--brightest: #f4f9f9;
+	--medium: #eff8ff;
+	--dark: #dddddd;
+	--darkest: #888888;
+
+	/* font sizes */
+	--fs-1: 24px;
+
+	--fs-2: 20px;
+	/* --fs-2: 18px; */
+
+	--fs-3: 18px;
+	/* --fs-3: 17px; */
+
+	--fs-4: 16px;
+	--fs-5: 15px;
+	--fs-6: 14px;
+	--fs-7: 13px;
+	--fs-8: 11px;
+
+	/* font weights */
+	--fw-300: 300;
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-600: 600;
+
+	/* font family */
+	--ff-poppins: 'Poppins', sans-serif;
+
+	/* section wise vars */
+	--navbar-h: 80px;
+	--section-indent: 5px;
+
+	/* Responsive screen widths 
+	450, 580, 768, 1024, 1250  */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: var(--ff-poppins);
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--brightest);
+	font-weight: var(--fw-300);
+}
+
+a {
+	text-decoration: none;
+	color: var(--brightest);
+}
+
+main {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+.hidden {
+	display: none;
+}
+
+@media screen and (min-width: 580px) {
+	main {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	main {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	main {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	main {
+		margin-left: 160px;
+		margin-right: 160px;
+	}
+
+	section {
+		margin-bottom: 50px;
+	}
+}

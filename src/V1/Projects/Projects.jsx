@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { projects } from '../data';
+import './Projects.css';
+import { projects } from '../../data';
 
 const filterNNewest = (projects, n) =>
 	projects.sort((a, b) => b.id - a.id).slice(0, n);

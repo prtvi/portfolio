@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { skillsV1 } from '../data';
+import './Skills.css';
+import { skillsV1 } from '../../data';
 
 export default function Skills() {
 	return (

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
+import './Navbar.css';
+
 export default function Navbar() {
 	const [navOpen, toggleNavOpen] = React.useState(false);
 

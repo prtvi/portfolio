@@ -1,0 +1,60 @@
+/* -------------------------------------------------
+	SKILLS mobile
+------------------------------------------------- */
+
+.skills {
+	color: var(--brightest);
+
+	border: var(--border-toggle);
+}
+
+.skills h3 {
+	color: var(--brightest);
+	font-weight: var(--fw-500);
+	font-size: var(--fs-2);
+	margin-bottom: 25px;
+}
+
+.skill {
+	color: var(--dark);
+	font-size: var(--fs-5);
+	margin: 2%;
+	margin-left: var(--section-indent);
+	margin-right: var(--section-indent);
+
+	border: var(--border-toggle);
+}
+
+.skill hr {
+	margin-top: 10px;
+	border: none;
+	height: 1px;
+	background-color: var(--darkest);
+}
+
+.skill strong {
+	color: var(--brightest);
+	font-weight: var(--fw-500);
+}
+
+.other-skills {
+	margin-left: var(--section-indent);
+}
+
+@media screen and (min-width: 768px) {
+	.skill {
+		margin-top: 4%;
+		margin-bottom: 4%;
+		font-size: var(--fs-4);
+	}
+
+	.other-skills {
+		font-size: var(--fs-5);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.skill p {
+		margin-bottom: 20px;
+	}
+}

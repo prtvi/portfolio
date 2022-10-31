@@ -1,0 +1,39 @@
+/* -------------------------------------------------
+	CONTACT mobile
+------------------------------------------------- */
+
+.contact {
+	text-align: center;
+	height: 120px;
+
+	border: var(--border-toggle);
+}
+
+.contact h3 {
+	color: var(--brightest);
+	text-align: left;
+	font-size: var(--fs-2);
+	font-weight: var(--fw-500);
+	margin-bottom: 15px;
+}
+
+.contact a {
+	margin: 1%;
+}
+
+.contact img {
+	border-radius: 8px;
+	transform: scale(0.7);
+	padding: 5pt;
+	background-color: var(--img-bg-color);
+}
+
+.contact img:hover {
+	box-shadow: 0px 0px 0px 1px var(--medium) inset;
+}
+
+@media screen and (min-width: 768px) {
+	.contact img {
+		transform: scale(0.8);
+	}
+}

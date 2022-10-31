@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { socialLinks, onlineAvatarLink } from '../data';
+import './Home.css';
+import { socialLinks, onlineAvatarLink } from '../../data';
 
 export default function Home() {
 	const age = Math.abs(
