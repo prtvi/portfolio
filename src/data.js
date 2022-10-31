@@ -1,3 +1,21 @@
+export const onlineAvatarLink =
+	'https://avatars.githubusercontent.com/u/67362607?v=4';
+
+export const skillsV1 = [
+	{
+		name: 'NodeJS | Golang',
+		tagline: 'for backend Web Development.',
+	},
+	{
+		name: 'Python',
+		tagline: 'for ML & AI and automation projects.',
+	},
+	{
+		name: 'JavaScript | React',
+		tagline: 'to build interactive webpages.',
+	},
+];
+
 export const contactCards = [
 	{
 		name: 'Email',

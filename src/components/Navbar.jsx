@@ -7,8 +7,17 @@ export default function Navbar() {
 	const toggleNavbar = () => toggleNavOpen(curr => !curr);
 	const ifNavOpen = () => (navOpen ? 'toggle' : '');
 
-	const closeNav = e => {
+	const closeNavAndScrollTo = e => {
 		if (e.target.classList.contains('toggle')) toggleNavbar();
+
+		const elementToScroll = document.getElementById(
+			String(e.target.textContent).toLowerCase()
+		);
+
+		window.scrollTo({
+			top: elementToScroll.offsetTop,
+			behavior: 'smooth',
+		});
 	};
 
 	return (
@@ -16,7 +25,7 @@ export default function Navbar() {
 			<nav className={`navbar ${ifNavOpen()}`}>
 				<Link
 					to="#home"
-					onClick={closeNav}
+					onClick={closeNavAndScrollTo}
 					className={`nav-link ${ifNavOpen()}`}
 				>
 					Home
@@ -24,7 +33,7 @@ export default function Navbar() {
 
 				<Link
 					to="#skills"
-					onClick={closeNav}
+					onClick={closeNavAndScrollTo}
 					className={`nav-link ${ifNavOpen()}`}
 				>
 					Skills
@@ -32,19 +41,23 @@ export default function Navbar() {
 
 				<Link
 					to="#projects"
-					onClick={closeNav}
+					onClick={closeNavAndScrollTo}
 					className={`nav-link ${ifNavOpen()}`}
 				>
 					Projects
 				</Link>
 
-				<Link to="/v2" onClick={closeNav} className={`nav-link ${ifNavOpen()}`}>
+				<Link
+					to="/v2"
+					onClick={closeNavAndScrollTo}
+					className={`nav-link ${ifNavOpen()}`}
+				>
 					Portfolio
 				</Link>
 
 				<Link
 					to="#contact"
-					onClick={closeNav}
+					onClick={closeNavAndScrollTo}
 					className={`nav-link ${ifNavOpen()}`}
 				>
 					Contact

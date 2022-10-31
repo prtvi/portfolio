@@ -313,11 +313,7 @@ section {
 }
 
 .other-skills {
-	color: var(--medium);
-	font-size: var(--fs-6);
-	font-weight: var(--fw-300);
 	margin-left: var(--section-indent);
-	margin-right: var(--section-indent);
 }
 
 /* -------------------------------------------------

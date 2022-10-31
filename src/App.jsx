@@ -23,7 +23,7 @@ export default function App() {
 							</main>
 						}
 					/>
-					<Route path="/v2" element={<div>this will be v2</div>} />
+					<Route path="/v2" element={<div>v2</div>} />
 
 					<Route path="*" element={<div></div>} />
 				</Route>

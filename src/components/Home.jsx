@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { socialLinks, onlineAvatarLink } from '../data';
+
 export default function Home() {
 	const age = Math.abs(
 		new Date(Date.now() - new Date(1999, 6, 25)).getUTCFullYear() - 1970
 	);
+
+	const githubLink = socialLinks.find(s => s.href.includes('github')).href;
 
 	return (
 		<section className="home" id="home">
@@ -21,7 +25,7 @@ export default function Home() {
 					</p>
 
 					<p className="visit">
-						<a href="https://github.com/prtvi" className="link">
+						<a href={githubLink} className="link">
 							Visit my Github profile &rarr;
 						</a>
 					</p>
@@ -29,10 +33,7 @@ export default function Home() {
 			</div>
 
 			<div className="avatar">
-				<img
-					src="https://avatars.githubusercontent.com/u/67362607?v=4"
-					alt="logo icon"
-				/>
+				<img src={onlineAvatarLink} alt="logo icon" />
 			</div>
 		</section>
 	);
