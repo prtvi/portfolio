@@ -1,6 +1,8 @@
 export const onlineAvatarLink =
 	'https://avatars.githubusercontent.com/u/67362607?v=4';
 
+export const avatarSrc = './assets/icons/avatar.png';
+
 export const skillsV1 = [
 	{
 		name: 'NodeJS | Golang',
@@ -21,48 +23,52 @@ export const contactCards = [
 		name: 'Email',
 		value: 'prithvippv25@gmail.com',
 		href: 'mailto:prithvippv25@gmail.com',
+		iconName: 'mail-outline',
 	},
 	// {
 	// 	name: 'Phone',
 	// 	value: '+918104994949',
 	// 	href: 'tel:+918104994949',
+	// 	iconName: 'phone-portrait-outline',
 	// },
 	{
 		name: 'Birthday',
 		value: '1999-07-25',
 		href: 'July 25, 1999',
+		iconName: 'calendar-outline',
 	},
 	{
 		name: 'Location',
 		value: 'Bangalore, Karnataka, India',
 		href: '',
+		iconName: 'location-outline',
 	},
 ];
 
 export const socialLinks = [
 	{
 		href: 'mailto:prithvippv25@gmail.com',
-		imgSrc: 'assets/gmail.png',
+		imgSrc: 'assets/icons/gmail.png',
 		iconName: 'logo-gmail',
 	},
 	{
 		href: 'https://github.com/prtvi',
-		imgSrc: 'assets/github.png',
+		imgSrc: 'assets/icons/github.png',
 		iconName: 'logo-github',
 	},
 	{
 		href: 'https://www.linkedin.com/in/prithviraj-vernekar-5830161b2/',
-		imgSrc: 'assets/linkedin.png',
+		imgSrc: 'assets/icons/linkedin.png',
 		iconName: 'logo-linkedin',
 	},
 	{
 		href: 'https://twitter.com/prtviv',
-		imgSrc: 'assets/twitter.png',
+		imgSrc: 'assets/icons/twitter.png',
 		iconName: 'logo-twitter',
 	},
 	{
 		href: 'https://www.instagram.com/prtviv',
-		imgSrc: 'assets/instagram.png',
+		imgSrc: 'assets/icons/instagram.png',
 		iconName: 'logo-instagram',
 	},
 ];
