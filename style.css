@@ -11,20 +11,15 @@
 	--dark: #dddddd;
 	--darkest: #888888;
 
-	/* font sizes */
+	/* font size */
 	--fs-1: 24px;
-
 	--fs-2: 20px;
-	/* --fs-2: 18px; */
-
 	--fs-3: 18px;
-	/* --fs-3: 17px; */
-
 	--fs-4: 16px;
 	--fs-5: 15px;
 	--fs-6: 14px;
-	--fs-7: 13px;
-	--fs-8: 11px;
+	--fs-7: 12px;
+	--fs-8: 10px;
 
 	/* font weights */
 	--fw-300: 300;
@@ -32,7 +27,6 @@
 	--fw-500: 500;
 	--fw-600: 600;
 
-	/* font family */
 	--ff-poppins: 'Poppins', sans-serif;
 
 	/* section wise vars */
@@ -341,46 +335,52 @@ section {
 .project-list {
 	margin-left: var(--section-indent);
 	margin-right: var(--section-indent);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 
 	border: var(--border-toggle);
 }
 
 .project {
-	display: block;
 	background-color: #000;
 	border: 3px solid #008000;
 	border-radius: 15px;
-	width: 65%;
-	margin: 0 auto 15px auto;
+	width: 135px;
+	height: 75px;
+	margin: 5px;
 	cursor: pointer;
-	transition: transform 0.3s;
-
-	/* vertically and horizontally center inner div  */
 	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.project div {
-	border: var(--border-toggle);
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .project:hover {
-	transform: scale(1.1);
+	transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+	transform: scale(1.08);
 }
 
 .project h5 {
 	color: var(--medium);
-	font-size: var(--fs-5);
-	font-weight: var(--fw-400);
-	margin: 2%;
+	font-size: var(--fs-7);
+	line-height: 15px;
+	font-weight: var(--fw-300);
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-bottom: 6px;
+
+	border: var(--border-toggle);
 }
 
 .project p {
 	color: var(--dark);
-	font-size: var(--fs-7);
+	font-size: var(--fs-8);
+	line-height: 12px;
 	font-weight: var(--fw-300);
-	margin: 2%;
+	padding-left: 3px;
+	padding-right: 3px;
+
+	border: var(--border-toggle);
 }
 
 /* -------------------------------------------------
@@ -454,7 +454,8 @@ section {
 	}
 
 	.project {
-		width: 60%;
+		width: 160px;
+		height: 80px;
 	}
 }
 
@@ -504,27 +505,19 @@ section {
 		font-size: var(--fs-5);
 	}
 
-	/* place projects side by side */
-	.project-list {
-		display: flex;
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
 	.project {
-		flex: 1;
-	}
-
-	.project:first-child {
-		margin-right: 20px;
+		width: 195px;
+		height: 90px;
 	}
 
 	.project h5 {
-		font-size: var(--fs-4);
+		font-size: var(--fs-6);
+		line-height: 17px;
 	}
 
 	.project p {
-		font-size: var(--fs-6);
+		font-size: var(--fs-7);
+		line-height: 15px;
 	}
 
 	.contact img {
