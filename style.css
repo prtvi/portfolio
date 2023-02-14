@@ -330,6 +330,8 @@ section {
 	font-weight: var(--fw-500);
 	text-align: left;
 	margin-bottom: 25px;
+
+	border: var(--border-toggle);
 }
 
 .project-list {
@@ -360,7 +362,7 @@ section {
 	transform: scale(1.08);
 }
 
-.project h5 {
+.project h4 {
 	color: var(--medium);
 	font-size: var(--fs-7);
 	line-height: 15px;
@@ -399,16 +401,19 @@ section {
 	text-align: left;
 	font-size: var(--fs-2);
 	font-weight: var(--fw-500);
-	margin-bottom: 15px;
+	margin-bottom: 25px;
+
+	border: var(--border-toggle);
 }
 
 .contact a {
-	margin: 1%;
+	margin: 2%;
 }
 
 .contact img {
 	border-radius: 8px;
-	transform: scale(0.7);
+	width: 20px;
+	height: 20px;
 	padding: 5pt;
 	background-color: var(--img-bg-color);
 }
@@ -510,7 +515,7 @@ section {
 		height: 90px;
 	}
 
-	.project h5 {
+	.project h4 {
 		font-size: var(--fs-6);
 		line-height: 17px;
 	}
@@ -521,7 +526,8 @@ section {
 	}
 
 	.contact img {
-		transform: scale(0.8);
+		width: 25px;
+		height: 25px;
 	}
 }
 
