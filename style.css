@@ -123,14 +123,9 @@ a {
 	background-color: var(--bg);
 	z-index: 21;
 	opacity: 0.95;
-
-	/* border: 1px solid red; */
-
-	/* all transitions here */
-	/* transition: all 0.9s ease; */
 }
 
-.navbar.toggle a.icon {
+.navbar.toggle div.icon {
 	position: absolute;
 	right: 0;
 	top: 0;

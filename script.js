@@ -1,6 +1,7 @@
 // navbar
 const navbar = document.querySelector('.navbar');
 const hamburger = document.querySelector('.hamburger');
+const hamburgerNavLink = document.querySelector('.nav-link.icon');
 const navLinks = document.querySelectorAll('.nav-link');
 
 const toggleNavbar = function () {
@@ -22,7 +23,7 @@ const closeNavOnClick = function () {
 	if (this.classList.contains('toggle')) toggleNavbar();
 };
 
-hamburger.addEventListener('click', toggleNavbar);
+hamburgerNavLink.addEventListener('click', toggleNavbar);
 navLinks.forEach(n => n.addEventListener('click', closeNavOnClick)); // close navbar when any link is clicked
 
 // update age dynamically
