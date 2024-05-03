@@ -30,10 +30,9 @@ const selectValue = document.querySelector('[data-select-value]');
 // all possible selectable values for selectBtn
 const selectItems = document.querySelectorAll('[data-select-item]');
 
-// project items
-const projectItems = document.querySelectorAll('[data-project-item]');
-
 const filterFunc = function (selectedValue) {
+	const projectItems = document.querySelectorAll('[data-project-item]');
+
 	projectItems.forEach(pi => {
 		// project tags or categories
 		const tags = pi.dataset.category;
@@ -108,3 +107,65 @@ navigationLinks.forEach(navLink => {
 		});
 	});
 });
+
+// dynamic project load
+const url =
+	'https://raw.githubusercontent.com/prtvi/prtvi.github.io/master/allprojects.json';
+
+fetch(url)
+	.then(res => res.json())
+	.then(data => {
+		const ul = document.querySelector('ul.project-list');
+		data.forEach(d => ul.appendChild(getProjectLi(d)));
+	});
+
+function getProjectLi(proj) {
+	const li = document.createElement('li');
+	li.classList.add('project-item', 'active');
+	li.dataset.projectItem = '';
+	li.dataset.category = proj.project_category;
+
+	// will go inside li
+	const a = document.createElement('a');
+	a.href = proj.is_hosted ? proj.hosted_url : proj.repo_url;
+	a.target = '_blank';
+
+	// will go inside a
+	const figure = document.createElement('figure');
+	figure.classList.add('project-img');
+
+	// will go inside figure
+	const div = document.createElement('div');
+	div.classList.add('project-item-icon-box');
+	div.innerHTML = `<ion-icon name="eye-outline"></ion-icon>`;
+
+	// will go inside figure
+	const img = document.createElement('img');
+	img.src = proj.img_src;
+	img.alt = proj.img_alt;
+	img.loading = 'lazy';
+
+	figure.appendChild(div);
+	figure.appendChild(img);
+
+	a.appendChild(figure);
+
+	// will go inside a
+	const h3 = document.createElement('h3');
+	h3.classList.add('project-title');
+	h3.textContent = proj.title;
+
+	a.appendChild(h3);
+
+	proj.project_category.forEach(pc => {
+		const p = document.createElement('p');
+		p.classList.add('project-category');
+		p.textContent = pc;
+
+		a.appendChild(p);
+	});
+
+	li.appendChild(a);
+
+	return li;
+}

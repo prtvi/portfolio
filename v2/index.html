@@ -423,8 +423,6 @@
 						<h2 class="h2 article-title">Portfolio</h2>
 					</header>
 
-					<!-- list => [all, webdev, ml, iot, other] -->
-
 					<section class="projects">
 						<!-- filter list for larger screen (like navbar) -->
 						<ul class="filter-list">
@@ -434,6 +432,22 @@
 
 							<li class="filter-item">
 								<button data-filter-btn="webdev">Web Development</button>
+							</li>
+
+							<li class="filter-item">
+								<button data-filter-btn="fullstack">Fullstack apps</button>
+							</li>
+							
+							<li class="filter-item">
+								<button data-filter-btn="algorithms">Algorithms</button>
+							</li>
+							
+							<li class="filter-item">
+								<button data-filter-btn="games">Games</button>
+							</li>
+							
+							<li class="filter-item">
+								<button data-filter-btn="api">APIs</button>
 							</li>
 
 							<li class="filter-item">
@@ -471,6 +485,22 @@
 								</li>
 
 								<li class="select-item">
+									<button data-select-item="fullstack">Fullstack apps</button>
+								</li>
+								
+								<li class="select-item">
+									<button data-select-item="algorithms">Algorithms</button>
+								</li>
+								
+								<li class="select-item">
+									<button data-select-item="games">Games</button>
+								</li>
+								
+								<li class="select-item">
+									<button data-select-item="api">APIs</button>
+								</li>
+
+								<li class="select-item">
 									<button data-select-item="ml">Machine Learning</button>
 								</li>
 
@@ -486,334 +516,7 @@
 
 						<!-- display project list -->
 						<ul class="project-list">
-							<!-- Emojipedia -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['webdev']"
-							>
-								<a href="https://github.com/prtvi/emojipedia" target="_blank">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/emojipedia.png"
-											alt="Emojipedia application snapshot"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Emojipedia</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<!-- A* algorithm vis -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['webdev']"
-							>
-								<a href="https://github.com/prtvi/astar-vis" target="_blank">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/astar.png"
-											alt="A star algorithm visualizer"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">A* shortest path Visualization</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<!-- react-rat in a maze -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['webdev']"
-							>
-								<a
-									href="https://github.com/prtvi/rat-in-a-maze"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/rat-in-a-maze.png"
-											alt="rat in a maze visualizer"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Rat in a Maze Visualization</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<!-- automation using hand gestures -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['iot', 'ml']"
-							>
-								<a
-									href="https://github.com/prtvi/automation-using-hand-gestures"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/auh.png"
-											alt="automation using hand gestures"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Automation using hand gestures</h3>
-
-									<p class="project-category">IoT</p>
-									<p class="project-category">Machine learning</p>
-								</a>
-							</li>
-
-							<!-- smart agricare -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['iot', 'ml', 'webdev']"
-							>
-								<a
-									href="https://github.com/gokulBalaG/Smart-Agricare"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/smart-agricare.png"
-											alt="smart agricare"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Smart Agricare</h3>
-
-									<p class="project-category">IoT</p>
-									<p class="project-category">Machine learning</p>
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<!-- joke api -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['webdev']"
-							>
-								<a href="https://github.com/prtvi/joke-api" target="_blank">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/joke-api.png"
-											alt="joke API"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Joke API</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<!-- sorting visualizer -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['webdev']"
-							>
-								<a
-									href="https://github.com/prtvi/sorting-visualizer"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/sorting-visualizer.png"
-											alt="sorting visualizer"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Sorting visualizer</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
-
-							<!-- steganography -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['other']"
-							>
-								<a
-									href="https://github.com/prtvi/steganography"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/steganography.png"
-											alt="steganography"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Steganography</h3>
-
-									<p class="project-category">Other</p>
-								</a>
-							</li>
-
-							<!-- green screening implementation -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['other']"
-							>
-								<a
-									href="https://github.com/prtvi/green-screening-implementation"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/green-screen.png"
-											alt="green screening implementation"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Green screening implementation</h3>
-
-									<p class="project-category">Other</p>
-								</a>
-							</li>
-
-							<!-- password manager -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['other']"
-							>
-								<a
-									href="https://github.com/prtvi/passwordManager"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/password-manager.png"
-											alt="password manager"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Password Manager</h3>
-
-									<p class="project-category">Other</p>
-								</a>
-							</li>
-
-							<!-- mso -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['other']"
-							>
-								<a href="https://github.com/prtvi/mso" target="_blank">
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/mso.png"
-											alt="mapping system for organizations"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">
-										Mapping system for organizations
-									</h3>
-
-									<p class="project-category">Other</p>
-								</a>
-							</li>
-
-							<!-- typing test -->
-							<li
-								class="project-item active"
-								data-project-item
-								data-category="['webdev']"
-							>
-								<a
-									href="https://github.com/prtvi/javascript-projects/tree/master/typing-test"
-									target="_blank"
-								>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-
-										<img
-											src="./assets/projects/typing-test.png"
-											alt="typing test"
-											loading="lazy"
-										/>
-									</figure>
-
-									<h3 class="project-title">Typing Test</h3>
-
-									<p class="project-category">Web development</p>
-								</a>
-							</li>
+							
 						</ul>
 					</section>
 				</article>
