@@ -314,8 +314,6 @@ section {
 ------------------------------------------------- */
 
 .projects {
-	text-align: center;
-
 	border: var(--border-toggle);
 }
 
@@ -332,6 +330,7 @@ section {
 .project-list {
 	margin-left: var(--section-indent);
 	margin-right: var(--section-indent);
+	margin-bottom: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -342,6 +341,7 @@ section {
 .project {
 	background-color: #000;
 	border: 3px solid #008000;
+	text-align: center;
 	border-radius: 15px;
 	width: 135px;
 	height: 75px;
@@ -378,6 +378,10 @@ section {
 	padding-right: 3px;
 
 	border: var(--border-toggle);
+}
+
+.other-projects {
+	font-size: var(--fs-6);
 }
 
 /* -------------------------------------------------
@@ -560,6 +564,10 @@ section {
 	.project-list {
 		margin-left: 60px;
 		margin-right: 60px;
+	}
+
+	.other-projects {
+		font-size: var(--fs-4);
 	}
 }
 

@@ -28,3 +28,41 @@ navLinks.forEach(n => n.addEventListener('click', closeNavOnClick)); // close na
 
 // update age dynamically
 window.addEventListener('load', updateAge);
+
+// dynamic project load
+const url =
+	'https://raw.githubusercontent.com/prtvi/prtvi.github.io/master/allprojects.json';
+
+function getProjectDomLi(project) {
+	const p = document.createElement('p');
+	p.textContent = project.desc;
+	const h4 = document.createElement('h4');
+	h4.textContent = project.title;
+
+	const a = document.createElement('a');
+	a.target = '_blank';
+
+	if (project.is_hosted) a.href = project.hosted_url;
+	else a.href = project.repo_url;
+
+	a.appendChild(h4);
+	a.appendChild(p);
+
+	const div = document.createElement('div');
+	div.appendChild(a);
+
+	const li = document.createElement('li');
+	li.classList.add('project');
+	li.appendChild(div);
+
+	return li;
+}
+
+fetch(url)
+	.then(res => res.json())
+	.then(data => {
+		const ul = document.querySelector('ul.project-list');
+		for (let i = 0; i < 5; i++) {
+			ul.appendChild(getProjectDomLi(data[i]));
+		}
+	});
