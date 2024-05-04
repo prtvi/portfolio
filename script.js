@@ -40,10 +40,8 @@ function getProjectDomLi(project) {
 	h4.textContent = project.title;
 
 	const a = document.createElement('a');
+	a.href = project.is_hosted ? project.hosted_url : project.repo_url;
 	a.target = '_blank';
-
-	if (project.is_hosted) a.href = project.hosted_url;
-	else a.href = project.repo_url;
 
 	a.appendChild(h4);
 	a.appendChild(p);
