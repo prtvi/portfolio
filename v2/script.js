@@ -1,8 +1,5 @@
 'use strict';
 
-// project tags
-// webdev, ml, iot, other
-
 // ---------------------- SIDEBAR ----------------------
 
 // element toggle function
@@ -14,9 +11,6 @@ const sidebarBtn = document.querySelector('[data-sidebar-btn]');
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener('click', () => elementToggleFunc(sidebar));
 
-//
-//
-
 // ---------------------- PORTFOLIO ----------------------
 
 // for dropdown selection
@@ -24,11 +18,8 @@ sidebarBtn.addEventListener('click', () => elementToggleFunc(sidebar));
 // select btn
 const selectBtn = document.querySelector('[data-select]');
 
-// value that is selected for selectBtn
+// value that is selected for select btn
 const selectValue = document.querySelector('[data-select-value]');
-
-// all possible selectable values for selectBtn
-const selectItems = document.querySelectorAll('[data-select-item]');
 
 const filterFunc = function (selectedValue) {
 	const projectItems = document.querySelectorAll('[data-project-item]');
@@ -50,37 +41,6 @@ const filterFunc = function (selectedValue) {
 selectBtn.addEventListener('click', function () {
 	elementToggleFunc(this);
 });
-
-selectItems.forEach(si => {
-	si.addEventListener('click', function () {
-		let selectedValue = this.dataset.selectItem;
-		selectValue.innerText = this.innerText;
-		elementToggleFunc(selectBtn);
-		filterFunc(selectedValue);
-	});
-});
-
-// larger screen only
-
-const filterBtns = document.querySelectorAll('[data-filter-btn]');
-// add event in all filter button items for large screen
-
-let lastClickedBtn = filterBtns[0];
-
-filterBtns.forEach(fb => {
-	fb.addEventListener('click', function () {
-		let selectedValue = this.dataset.filterBtn;
-		selectValue.innerText = this.innerText;
-		filterFunc(selectedValue);
-
-		lastClickedBtn.classList.remove('active');
-		this.classList.add('active');
-		lastClickedBtn = this;
-	});
-});
-
-//
-//
 
 // ---------------------- PAGE NAVIGATION ----------------------
 
@@ -115,9 +75,69 @@ const url =
 fetch(url)
 	.then(res => res.json())
 	.then(data => {
-		const ul = document.querySelector('ul.project-list');
-		data.projects.forEach(d => ul.appendChild(getProjectLi(d)));
+		populateProjects(data.projects);
+		initSelectItems(data.meta.project_category_labels);
+		initFilterItems(data.meta.project_category_labels);
 	});
+
+function populateProjects(projects) {
+	const ul = document.querySelector('ul.project-list');
+	projects.forEach(d => ul.appendChild(getProjectLi(d)));
+}
+
+function initSelectItems(labels) {
+	const selectList = document.querySelector('.select-list');
+
+	let count = 0;
+	let isActive = false;
+
+	for (const key in labels) {
+		if (count === 0) isActive = true;
+		else isActive = false;
+
+		const li = getSelectItem(key, labels[key], isActive);
+
+		li.addEventListener('click', function () {
+			let selectedValue = this.dataset.selectItem;
+			selectValue.innerText = this.innerText;
+			elementToggleFunc(selectBtn);
+			filterFunc(selectedValue);
+		});
+
+		selectList.appendChild(li);
+		count++;
+	}
+}
+
+let lastClickedBtn;
+function initFilterItems(labels) {
+	const filterList = document.querySelector('.filter-list');
+
+	let count = 0;
+	let isActive = false;
+
+	for (const key in labels) {
+		if (count === 0) isActive = true;
+		else isActive = false;
+
+		const li = getFilterItem(key, labels[key], isActive);
+
+		li.addEventListener('click', function () {
+			let selectedValue = this.dataset.filterBtn;
+			selectValue.innerText = this.innerText;
+			filterFunc(selectedValue);
+
+			lastClickedBtn.querySelector('button').classList.remove('active');
+			this.querySelector('button').classList.add('active');
+			lastClickedBtn = this;
+		});
+
+		filterList.appendChild(li);
+
+		if (count === 0) lastClickedBtn = li;
+		count++;
+	}
+}
 
 function getProjectLi(proj) {
 	const li = document.createElement('li');
@@ -166,6 +186,36 @@ function getProjectLi(proj) {
 	});
 
 	li.appendChild(a);
+
+	return li;
+}
+
+function getSelectItem(key, value, isActive) {
+	const li = document.createElement('li');
+	li.classList.add('select-item');
+	li.dataset.selectItem = key;
+
+	const btn = document.createElement('button');
+	btn.textContent = value;
+
+	if (isActive) btn.classList.add('active');
+
+	li.appendChild(btn);
+
+	return li;
+}
+
+function getFilterItem(key, value, isActive) {
+	const li = document.createElement('li');
+	li.classList.add('filter-item');
+	li.dataset.filterBtn = key;
+
+	const btn = document.createElement('button');
+	btn.textContent = value;
+
+	if (isActive) btn.classList.add('active');
+
+	li.appendChild(btn);
 
 	return li;
 }
