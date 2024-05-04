@@ -62,7 +62,6 @@ fetch(url)
 	.then(res => res.json())
 	.then(data => {
 		const ul = document.querySelector('ul.project-list');
-		for (let i = 0; i < 5; i++) {
-			ul.appendChild(getProjectDomLi(data[i]));
-		}
+		for (let i = 0; i < 5; i++)
+			ul.appendChild(getProjectDomLi(data.projects[i]));
 	});

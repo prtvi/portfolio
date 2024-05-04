@@ -383,6 +383,9 @@ section {
 .other-projects {
 	font-size: var(--fs-6);
 }
+.other-projects a:hover {
+	text-decoration: underline;
+}
 
 /* -------------------------------------------------
 	CONTACT 

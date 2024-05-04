@@ -116,7 +116,7 @@ fetch(url)
 	.then(res => res.json())
 	.then(data => {
 		const ul = document.querySelector('ul.project-list');
-		data.forEach(d => ul.appendChild(getProjectLi(d)));
+		data.projects.forEach(d => ul.appendChild(getProjectLi(d)));
 	});
 
 function getProjectLi(proj) {
