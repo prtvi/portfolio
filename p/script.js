@@ -70,7 +70,7 @@ navigationLinks.forEach(navLink => {
 
 // dynamic project load
 const url =
-	'https://raw.githubusercontent.com/prtvi/prtvi.github.io/master/allprojects.json';
+	'https://raw.githubusercontent.com/prtvi/portfolio/master/projects.json';
 
 fetch(url)
 	.then(res => res.json())

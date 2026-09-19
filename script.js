@@ -15,7 +15,7 @@ const toggleNavbar = function () {
 
 const updateAge = function () {
 	document.querySelector('.age').textContent = Math.abs(
-		new Date(Date.now() - new Date(1999, 6, 25)).getUTCFullYear() - 1970
+		new Date(Date.now() - new Date(1999, 6, 25)).getUTCFullYear() - 1970,
 	);
 };
 
@@ -31,7 +31,7 @@ window.addEventListener('load', updateAge);
 
 // dynamic project load
 const url =
-	'https://raw.githubusercontent.com/prtvi/prtvi.github.io/master/allprojects.json';
+	'https://raw.githubusercontent.com/prtvi/portfolio/master/projects.json';
 
 function getProjectDomLi(project) {
 	const p = document.createElement('p');
