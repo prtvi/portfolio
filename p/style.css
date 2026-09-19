@@ -11,7 +11,8 @@
 		hsl(0, 0%, 19%) 97%
 	);
 
-	--bg-gradient-jet: linear-gradient(
+	--bg-gradient-jet:
+		linear-gradient(
 			to bottom right,
 			hsla(240, 1%, 18%, 0.251) 0%,
 			hsla(240, 2%, 11%, 0) 100%
@@ -24,7 +25,8 @@
 		hsla(30, 25%, 2%, 0) 50%
 	);
 
-	--bg-gradient-lightgreen-dark-2: linear-gradient(
+	--bg-gradient-lightgreen-dark-2:
+		linear-gradient(
 			135deg,
 			hsla(124, 100%, 71%, 0.251) 0%,
 			hsla(35, 100%, 68%, 0) 59.86%
@@ -983,6 +985,7 @@ main {
 
 	.avatar-box img {
 		width: 120px;
+		border-radius: 30px;
 	}
 
 	.info-content .name {
@@ -1246,7 +1249,8 @@ main {
 		border: 5px solid var(--smoky-black);
 		background: hsla(0, 0%, 100%, 0.1);
 		border-radius: 20px;
-		box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+		box-shadow:
+			inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
 			inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
 	}
 
@@ -1304,6 +1308,7 @@ main {
 
 	.avatar-box img {
 		width: 150px;
+		border-radius: 30px;
 	}
 
 	.info-content .name {
